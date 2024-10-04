@@ -29,6 +29,9 @@ body{
     background: #fff;
     transition: 0.5s;
 }
+.container .card:hover{
+    box-shadow: 0 30px 50px rgba(0, 0, 0, .2);
+}
 
 .container .card .face{
     position: absolute;
@@ -59,6 +62,10 @@ body{
     color: #013d4a;
     border: 2px solid #013d4a;
 }
+.container .card .face.face1 a:hover{
+    color: #fff;
+    background: #013d4a;
+}
 .container .card .face.face2 h2{
     margin: 0;
     padding: 0;
@@ -66,4 +73,21 @@ body{
     color: #fff;
     transition: 00.5s;
 }
-
+.container .card:hover .face.face2 h2{
+    color: #013d4a;
+    font-size: 2em;
+}
+.container .card .face.face2{
+    background: #013d4a;
+    transition: 0.5s;
+}
+.container .card:hover .face.face2{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: 2px solid #013d4a;
+}
